@@ -23,6 +23,7 @@ a:active {
 	clear: both;
 	display: block;
 	float: left;
+	margin: 3em 0 1em 0;
 	width: 100%;
 }
 .main-navigation ul {
@@ -36,6 +37,9 @@ a:active {
 }
 .main-navigation a {
 	display: block;
+	background: #fff;
+	margin: 0 .5em 0 0;
+	padding: 6px;
 	text-decoration: none;
 }
 .main-navigation ul ul {
@@ -100,4 +104,22 @@ a:active {
 	float: right;
 	text-align: right;
 	width: 50%;
+}
+
+/*--------------------------------------------------------------
+7.3 Sidebar toggle
+--------------------------------------------------------------*/
+a.sidebar-toggle {
+	background: #222;
+	cursor: pointer;
+	font-size: 28px;
+	padding: 8px;
+}
+
+a.sidebar-toggle {
+	color: #999;
+}
+
+a.sidebar-toggle:hover {
+	color: #fff;
 }

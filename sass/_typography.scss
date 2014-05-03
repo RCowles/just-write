@@ -14,6 +14,7 @@ textarea {
 }
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	font-family: $sans-serif;
 }
 p {
 	margin-bottom: 1.5em;
@@ -71,4 +72,14 @@ small {
 }
 big {
 	font-size: 125%;
+}
+
+/*--------------------------------------------------------------
+4.1 Header
+--------------------------------------------------------------*/
+.site-title {
+	font-size: 300%;
+}
+.entry-title {
+	font-size: 200%;
 }

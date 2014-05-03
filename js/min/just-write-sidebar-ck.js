@@ -1,0 +1,1 @@
+jQuery(document).ready(function(n){var e;n(".sidebar-toggle").click(function(){return 1!=e?(n("#secondary").animate({marginLeft:"0px"},300,function(){e=!0}),!1):(n("#secondary").animate({marginLeft:"-300px"},300,function(){e=!1}),!1)})});

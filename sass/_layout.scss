@@ -1,0 +1,66 @@
+/*--------------------------------------------------------------
+5.2 Layout
+--------------------------------------------------------------*/
+
+#page {
+	/*float: left;*/
+	max-width: 880px;
+	margin: 0 auto;
+}
+
+#secondary {
+	background: #222;
+	color: #999;
+	margin: 0 0 0 -300px;
+	padding: 20px;
+	width: 300px; /* 300 */
+	float: left;
+	height: 100%;
+
+	a {
+		color: $color__link-secondary;
+	}
+
+	a:hover {
+		color: $color__link-secondary--hover;
+	}
+}
+
+#masthead {
+	margin: 60px 20px 10px 40px;
+}
+
+#content {
+	padding: 20px 40px;
+}
+
+/*--------------------------------------------------------------
+5.3 Header
+--------------------------------------------------------------*/
+#masthead img.avatar {
+	border-radius: 50px;
+	display: inline;
+	float: left;
+	margin: 0 20px 0 0;
+}
+
+.site-branding {
+	float: left;
+}
+
+/*--------------------------------------------------------------
+5.4 Secondary
+--------------------------------------------------------------*/
+#secondary {
+	background: $color__secondary-background;
+	color: $color__secondary-text;
+	margin: 0 0 0 -300px;
+	//margin: 0;
+	padding: 20px;
+	width: 300px; /* 300 */
+	float: left;
+	height: 100%;
+	z-index: 9999;
+	top: 0;
+	position: fixed;
+}

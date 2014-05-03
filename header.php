@@ -19,9 +19,13 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<a class="sidebar-toggle close">></a>
+
 <div id="page" class="hfeed site">
 
 	<header id="masthead" class="site-header" role="banner">
+		<?php echo get_avatar( get_the_author_meta( 'ID' ), 100 ); ?>
 		<div class="site-branding">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>

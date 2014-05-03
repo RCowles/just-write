@@ -6,6 +6,9 @@
  */
 ?>
 	<div id="secondary" class="widget-area" role="complementary">
+
+		<a class="sidebar-toggle close alignright"><</a>
+
 		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 
 			<aside id="search" class="widget widget_search">

@@ -1,0 +1,494 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ent",
+				"entry-content"
+			],
+			[
+				"inline",
+				"inline-block"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "style.css",
+			"settings":
+			{
+				"buffer_size": 15710,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 67.0,
+		"selected_items":
+		[
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"packag",
+				"Package Control: List Packages"
+			],
+			[
+				"packages",
+				"Package Control: List Packages"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 601.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/scss/variables/_colors.scss",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/header.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/content.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/footer.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/scss/partials/_menus.scss",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/functions.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/scss/variables/_structure.scss",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/single.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/home.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/inc/customizer.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/inc/custom-header.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/404.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/archive.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/comments.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/content-none.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/content-page.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/content-single.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/languages/_s.pot",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/layouts/content-sidebar.css",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/layouts/sidebar-content.css",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/inc/extras.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/inc/jetpack.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/inc/template-tags.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/inc/wpcom.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/index.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/search.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/sidebar.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/page.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/scss/partials/_normalize.scss",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/scss/mixins/_mixins.scss",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/scss/variables/_typography.scss",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/scss/partials/_typography.scss",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/config.rb",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/style.css",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/config.codekit",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/scss/partials/_links.scss",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/README.html",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/css/style.css",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/rtl.css",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/scss/.sass-cache/adbc687e13bd49afe7b946630c429c3929ebabe0/editor-style.scssc",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/scss/.sass-cache/adbc687e13bd49afe7b946630c429c3929ebabe0/rtl.scssc",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/README.md",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/scss/.sass-cache/adbc687e13bd49afe7b946630c429c3929ebabe0/style.scssc",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/scss/editor-style.scss",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/scss/rtl.scss",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/scss/style.scss",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/css/editor-style.css",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/css/rtl.css",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/meta_s2/style.css",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/meta_s2/readme.txt",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/meta_s2/sass/style.scss",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/meta_s2/sass/_layout.scss",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/meta_s2/sass/_responsive.scss",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/meta_s2/sass/_navigation.scss",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/meta_s2/sass/_menu.scss",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/meta_s2/content-single.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/meta_s2/header.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/meta_s2/functions.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/meta_s2/single.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/meta_s2/footer.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/meta_s2/custom-editor-style.css",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/meta_s2/sass/_content.scss",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/meta_s2/comments.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/meta_s2/sass/_media.scss",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/meta_s2/sass/_comments.scss",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/meta_s2/sass/_global.scss",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/meta_s2/sass/_vars.scss",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/meta_s2/sass/_widgets.scss",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/meta_s2/inc/extras.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/meta_s2/sass/_featured.scss",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/meta_s2/sass/_asides.scss",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/meta_s2/front-page.php",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/meta_s2/error_log",
+		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/meta_s2/content-featured.php",
+		"/Users/Ryan/Library/Application Support/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/Ryan/Documents/Websites/www.jetpackgithub.dev/wp-content/plugins/jetpack/class.jetpack.php",
+		"/Users/Ryan/Documents/Websites/www.jetpackgithub.dev/wp-content/plugins/jetpack/class.jetpack-client.php",
+		"/Users/Ryan/Documents/Websites/www.jetpackgithub.dev/wp-content/plugins/jetpack/.svnignore",
+		"/Users/Ryan/Documents/Websites/www.jetpackgithub.dev/wp-content/plugins/jetpack/.gitignore",
+		"/Users/Ryan/Documents/Websites/www.jetpackgithub.dev/wp-config.php"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 106.0,
+		"where_history":
+		[
+			"",
+			"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition",
+			"",
+			"/Users/Ryan/Documents/Websites/www.themereview.dev/wp-content/themes/dc_genomics",
+			"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/meta_s2",
+			"",
+			"proj/",
+			"proj",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"900px",
+			"1200px",
+			"900px",
+			"#primary",
+			"PRIMARY",
+			"#CONTENT",
+			"900px",
+			"#page",
+			"smash",
+			"max-w",
+			"figure",
+			" th_s",
+			"figc",
+			".1s",
+			"figur",
+			"content",
+			"size",
+			"image",
+			"_s-",
+			" _s",
+			"Text Domain:",
+			"Text Domain: _s",
+			"_s_",
+			"'_s'",
+			"_s_paging_nav",
+			"* _s",
+			"@package _s",
+			"h1",
+			"$base__font",
+			"base",
+			".css",
+			"THUNDERSCORES",
+			".site-h",
+			"mast",
+			"th_s-",
+			" th_s",
+			"Text Domain: th_s",
+			"th_s_",
+			"'th_s'",
+			"“",
+			"$sans",
+			"get_sidebar",
+			"sidebar",
+			"require",
+			"include",
+			"front",
+			"@include but",
+			"@include-but",
+			"paging-navigation",
+			"@media",
+			"@med",
+			"thumbnail",
+			"my_",
+			"init",
+			"capt",
+			"captio",
+			"addComment",
+			"cancel-comment-reply-link",
+			"addComment",
+			"respond",
+			"reply",
+			"comment",
+			"q {",
+			"quote",
+			"code",
+			"tr",
+			"  ",
+			"}",
+			"  ",
+			"blockqu",
+			"comment",
+			".entry-title",
+			"title",
+			"entry-ti",
+			"colop",
+			"colo",
+			"input",
+			"inoput",
+			"avatar",
+			"avata",
+			"avatar",
+			"color: darken($secondary, 10%);",
+			"avatar",
+			"32",
+			"ava",
+			"avatar",
+			"grav",
+			"32",
+			"depth",
+			"bluebott",
+			":hover",
+			"shadow",
+			"entry-h",
+			":before",
+			"entry-header",
+			"entry-title",
+			"title",
+			".entry-header",
+			"entry-header",
+			"hgroup",
+			"radi",
+			"default",
+			"sub-",
+			"let's",
+			"mytheme",
+			"meta_s2",
+			"mytheme",
+			"hent",
+			"default",
+			"input[type=\"submit\"]:hover",
+			"input[type=\"submit\"]:hover\n",
+			"input[type=\"submit\"]:hover",
+			".comment {",
+			"comment-me",
+			".entry",
+			"mast",
+			"6f9d9f",
+			"gener",
+			".entry-meta",
+			".site-main",
+			";\n",
+			".hentry",
+			"#main",
+			"article",
+			"site-main",
+			"featured-content",
+			"featured-conte"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			" _exhibition-",
+			" exhibition",
+			"Text Domain: _exhibition",
+			"_exhibition_",
+			"'exhibition'",
+			"* exhibition",
+			"@package exhibition",
+			"exhibition-",
+			" exhibition",
+			"Text Domain: exhibition",
+			"exhibition_",
+			"'exhibition'",
+			"\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "style.css",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 15710,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "just-write.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 250.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

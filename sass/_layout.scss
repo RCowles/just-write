@@ -1,6 +1,9 @@
 /*--------------------------------------------------------------
 5.2 Layout
 --------------------------------------------------------------*/
+body {
+	background: #eee;
+}
 
 #page {
 	/*float: left;*/
@@ -27,11 +30,17 @@
 }
 
 #masthead {
-	margin: 60px 20px 10px 40px;
+	background: $color__content-back;
+	padding: 60px 20px 10px 40px;
 }
 
 #content {
+	background: $color__content-back;
 	padding: 20px 40px;
+}
+
+#colophon {
+	padding: 20px 20px 80px 20px;
 }
 
 /*--------------------------------------------------------------

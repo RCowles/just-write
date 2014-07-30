@@ -6,7 +6,31 @@
 --------------------------------------------------------------*/
 a {
 	color: $color__link;
+	text-decoration: none;
+	@include transition-property(all);
+	@include transition-duration(400ms);
+
+	&:visited {
+		color: $color__link--visited;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link--hover;
+	}
+
+	.entry-content & {
+		color: $color__primary-text;
+		border-bottom: 1px solid $color__link;
+
+		&:hover {
+			background: $color__link--hover;
+			color: $color__content-back;
+		}
+	}
 }
+/*
 a:visited {
 	color: $color__link--visited;
 }
@@ -14,7 +38,7 @@ a:hover,
 a:focus,
 a:active {
 	color: $color__link--hover;
-}
+}*/
 
 /*--------------------------------------------------------------
 7.2 Menus
@@ -37,7 +61,6 @@ a:active {
 }
 .main-navigation a {
 	display: block;
-	background: #fff;
 	margin: 0 .5em 0 0;
 	padding: 6px;
 	text-decoration: none;
@@ -110,10 +133,9 @@ a:active {
 7.3 Sidebar toggle
 --------------------------------------------------------------*/
 a.sidebar-toggle {
-	background: #222;
+	background: $color__secondary-background;
 	cursor: pointer;
 	font: normal 28px/1 'dashicons';
-	padding: 8px;
 }
 
 a.open {
@@ -122,16 +144,25 @@ a.open {
 	position: absolute;
 		top: 0;
 		left: 0;
+
+	.admin-bar & {
+		top: 28px;
+	}
+}
+
+a.close {
+	margin: 14px 0x 18px 14px;
+	padding: 18px;
 }
 
 a.sidebar-toggle {
-	color: #999;
+	color: $color__content-back;
 }
 
 a.sidebar-toggle:hover {
-	color: #fff;
+	color: darken($color__content-back, 10%);
 }
 
 a.sidebar-toggle .dashicons {
-	font: normal 36px/1 'dashicons';
+	font: normal 32px/1 'dashicons';
 }

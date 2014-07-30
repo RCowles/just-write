@@ -6,7 +6,7 @@ button,
 input,
 select,
 textarea {
-	color: #404040;
+	color: $color__primary-text;
 	font-family: $sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
@@ -82,4 +82,13 @@ big {
 }
 .entry-title {
 	font-size: 200%;
+}
+
+/*--------------------------------------------------------------
+4.2 Content, Meta, Footer
+--------------------------------------------------------------*/
+.entry-meta,
+.entry-footer,
+.site-footer {
+	font-size: 12px;
 }

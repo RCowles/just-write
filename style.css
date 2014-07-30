@@ -31,10 +31,10 @@ Just Write is based on Underscores http://underscores.me/, (C) 2012-2014 Automat
 	2.1 - Fonts
 	2.2 - Colors
 	2.3 - Links
-	2.4 - Icons
 3.0 - Reset
 4.0 - Typography
 	4.1 - Header
+	4.2 - Content, Meta, Footer
 5.0 - Elements and layout
 	5.1 - Elements
 	5.2 - Layout
@@ -74,15 +74,6 @@ Just Write is based on Underscores http://underscores.me/, (C) 2012-2014 Automat
 /*--------------------------------------------------------------
 2.3 Links
 --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-2.4 Icons
---------------------------------------------------------------*/
-/*.sidebar-toggle:before {
-	content: "\f333";
-	display: inline-block;
-	-webkit-font-smoothing: antialiased;
-	font: normal 36px/1 'dashicons';
-}*/
 /*--------------------------------------------------------------
 3.0 - Reset
 --------------------------------------------------------------*/
@@ -201,7 +192,7 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
+  color: #7c7c7c;
   font-family: Verdana, sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
@@ -296,6 +287,15 @@ big {
 }
 
 /*--------------------------------------------------------------
+4.2 Content, Meta, Footer
+--------------------------------------------------------------*/
+.entry-meta,
+.entry-footer,
+.site-footer {
+  font-size: 12px;
+}
+
+/*--------------------------------------------------------------
 5.0 - Elements and Layout
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -357,6 +357,10 @@ th {
 /*--------------------------------------------------------------
 5.2 Layout
 --------------------------------------------------------------*/
+body {
+  background: #eee;
+}
+
 #page {
   /*float: left;*/
   max-width: 880px;
@@ -374,18 +378,24 @@ th {
   height: 100%;
 }
 #secondary a {
-  color: #f5f3dc;
+  color: white;
 }
 #secondary a:hover {
   color: white;
 }
 
 #masthead {
-  margin: 60px 20px 10px 40px;
+  background: white;
+  padding: 60px 20px 10px 40px;
 }
 
 #content {
+  background: white;
   padding: 20px 40px;
+}
+
+#colophon {
+  padding: 20px 20px 80px 20px;
 }
 
 /*--------------------------------------------------------------
@@ -406,8 +416,8 @@ th {
 5.4 Secondary
 --------------------------------------------------------------*/
 #secondary {
-  background: #222222;
-  color: #999999;
+  background: #006060;
+  color: #dddddd;
   margin: 0 0 0 -300px;
   padding: 20px;
   width: 300px;
@@ -555,18 +565,40 @@ textarea {
 --------------------------------------------------------------*/
 a {
   color: #009393;
+  text-decoration: none;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 400ms;
+  -o-transition-duration: 400ms;
+  -webkit-transition-duration: 400ms;
+  transition-duration: 400ms;
 }
-
 a:visited {
   color: #008989;
 }
+a:hover, a:focus, a:active {
+  color: #006060;
+}
+.entry-content a {
+  color: #7c7c7c;
+  border-bottom: 1px solid #009393;
+}
+.entry-content a:hover {
+  background: #006060;
+  color: white;
+}
 
+/*
+a:visited {
+	color: $color__link--visited;
+}
 a:hover,
 a:focus,
 a:active {
-  color: #006060;
-}
-
+	color: $color__link--hover;
+}*/
 /*--------------------------------------------------------------
 7.2 Menus
 --------------------------------------------------------------*/
@@ -591,7 +623,6 @@ a:active {
 
 .main-navigation a {
   display: block;
-  background: #fff;
   margin: 0 .5em 0 0;
   padding: 6px;
   text-decoration: none;
@@ -661,10 +692,9 @@ a:active {
 7.3 Sidebar toggle
 --------------------------------------------------------------*/
 a.sidebar-toggle {
-  background: #222;
+  background: #006060;
   cursor: pointer;
   font: normal 28px/1 'dashicons';
-  padding: 8px;
 }
 
 a.open {
@@ -676,17 +706,25 @@ a.open {
   top: 0;
   left: 0;
 }
+.admin-bar a.open {
+  top: 28px;
+}
+
+a.close {
+  margin: 14px 0x 18px 14px;
+  padding: 18px;
+}
 
 a.sidebar-toggle {
-  color: #999;
+  color: white;
 }
 
 a.sidebar-toggle:hover {
-  color: #fff;
+  color: #e6e6e6;
 }
 
 a.sidebar-toggle .dashicons {
-  font: normal 36px/1 'dashicons';
+  font: normal 32px/1 'dashicons';
 }
 
 /*--------------------------------------------------------------

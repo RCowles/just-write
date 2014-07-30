@@ -20,7 +20,7 @@
 
 <body <?php body_class(); ?>>
 
-<a class="sidebar-toggle close">></a>
+<a class="sidebar-toggle open"><div class="dashicons dashicons-menu"></div></a>
 
 <div id="page" class="hfeed site">
 

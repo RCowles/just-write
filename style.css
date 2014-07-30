@@ -30,6 +30,8 @@ Just Write is based on Underscores http://underscores.me/, (C) 2012-2014 Automat
 2.0 - Variables
 	2.1 - Fonts
 	2.2 - Colors
+	2.3 - Links
+	2.4 - Icons
 3.0 - Reset
 4.0 - Typography
 	4.1 - Header
@@ -69,7 +71,18 @@ Just Write is based on Underscores http://underscores.me/, (C) 2012-2014 Automat
 /*--------------------------------------------------------------
 2.2 Colors
 --------------------------------------------------------------*/
-/* Links */
+/*--------------------------------------------------------------
+2.3 Links
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+2.4 Icons
+--------------------------------------------------------------*/
+/*.sidebar-toggle:before {
+	content: "\f333";
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	font: normal 36px/1 'dashicons';
+}*/
 /*--------------------------------------------------------------
 3.0 - Reset
 --------------------------------------------------------------*/
@@ -650,8 +663,18 @@ a:active {
 a.sidebar-toggle {
   background: #222;
   cursor: pointer;
-  font-size: 28px;
+  font: normal 28px/1 'dashicons';
   padding: 8px;
+}
+
+a.open {
+  -moz-border-radius: 0px 0px 8px 0;
+  -webkit-border-radius: 0px;
+  border-radius: 0px 0px 8px 0;
+  padding: 14px 28px 18px 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 a.sidebar-toggle {
@@ -660,6 +683,10 @@ a.sidebar-toggle {
 
 a.sidebar-toggle:hover {
   color: #fff;
+}
+
+a.sidebar-toggle .dashicons {
+  font: normal 36px/1 'dashicons';
 }
 
 /*--------------------------------------------------------------

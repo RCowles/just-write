@@ -112,8 +112,16 @@ a:active {
 a.sidebar-toggle {
 	background: #222;
 	cursor: pointer;
-	font-size: 28px;
+	font: normal 28px/1 'dashicons';
 	padding: 8px;
+}
+
+a.open {
+	@include border-radius(0px 0px 8px 0);
+	padding: 14px 28px 18px 14px;
+	position: absolute;
+		top: 0;
+		left: 0;
 }
 
 a.sidebar-toggle {
@@ -122,4 +130,8 @@ a.sidebar-toggle {
 
 a.sidebar-toggle:hover {
 	color: #fff;
+}
+
+a.sidebar-toggle .dashicons {
+	font: normal 36px/1 'dashicons';
 }

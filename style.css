@@ -362,26 +362,8 @@ body {
 }
 
 #page {
-  /*float: left;*/
   max-width: 880px;
   margin: 0 auto;
-}
-
-#secondary {
-  background: #222;
-  color: #999;
-  margin: 0 0 0 -300px;
-  padding: 20px;
-  width: 300px;
-  /* 300 */
-  float: left;
-  height: 100%;
-}
-#secondary a {
-  color: white;
-}
-#secondary a:hover {
-  color: white;
 }
 
 #masthead {
@@ -421,12 +403,17 @@ body {
   margin: 0 0 0 -300px;
   padding: 20px;
   width: 300px;
-  /* 300 */
   float: left;
   height: 100%;
   z-index: 9999;
   top: 0;
   position: fixed;
+}
+#secondary a {
+  color: white;
+}
+#secondary a:hover {
+  color: white;
 }
 
 /*--------------------------------------------------------------
@@ -590,15 +577,6 @@ a:hover, a:focus, a:active {
   color: white;
 }
 
-/*
-a:visited {
-	color: $color__link--visited;
-}
-a:hover,
-a:focus,
-a:active {
-	color: $color__link--hover;
-}*/
 /*--------------------------------------------------------------
 7.2 Menus
 --------------------------------------------------------------*/

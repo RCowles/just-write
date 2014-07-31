@@ -6,27 +6,8 @@ body {
 }
 
 #page {
-	/*float: left;*/
 	max-width: 880px;
 	margin: 0 auto;
-}
-
-#secondary {
-	background: #222;
-	color: #999;
-	margin: 0 0 0 -300px;
-	padding: 20px;
-	width: 300px; /* 300 */
-	float: left;
-	height: 100%;
-
-	a {
-		color: $color__link-secondary;
-	}
-
-	a:hover {
-		color: $color__link-secondary--hover;
-	}
 }
 
 #masthead {
@@ -64,12 +45,19 @@ body {
 	background: $color__secondary-background;
 	color: $color__secondary-text;
 	margin: 0 0 0 -300px;
-	//margin: 0;
 	padding: 20px;
-	width: 300px; /* 300 */
+	width: 300px;
 	float: left;
 	height: 100%;
 	z-index: 9999;
 	top: 0;
 	position: fixed;
+
+	a {
+		color: $color__link-secondary;
+	}
+
+	a:hover {
+		color: $color__link-secondary--hover;
+	}
 }

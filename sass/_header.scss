@@ -1,0 +1,24 @@
+/*--------------------------------------------------------------
+5.3 Header
+--------------------------------------------------------------*/
+#masthead {
+
+	img.avatar {
+		border-radius: 50px;
+		display: inline;
+		float: left;
+		margin: 0 20px 0 0;
+		max-width: 20%;
+	}
+
+	.site-branding {
+		float: left;
+		width: 40%;
+	}
+
+	.main-navigation {
+		float: right;
+		margin: 4em 0 1em 0;
+		width: 40%
+	}
+}

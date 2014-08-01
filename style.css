@@ -38,6 +38,8 @@ Just Write is based on Underscores http://underscores.me/, (C) 2012-2014 Automat
 5.0 - Elements and layout
 	5.1 - Elements
 	5.2 - Layout
+	5.3 - Header
+	5.4 - Sidebar
 6.0 - Forms
 7.0 - Navigation
 	7.1 - Links
@@ -68,6 +70,7 @@ Just Write is based on Underscores http://underscores.me/, (C) 2012-2014 Automat
 /*--------------------------------------------------------------
 2.1 Fonts
 --------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
 /*--------------------------------------------------------------
 2.2 Colors
 --------------------------------------------------------------*/
@@ -201,7 +204,13 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  font-family: Verdana, sans-serif;
+  font-family: "Roboto Slab", serif;
+}
+
+h3 {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.5;
 }
 
 p {
@@ -358,25 +367,26 @@ th {
 5.2 Layout
 --------------------------------------------------------------*/
 body {
-  background: #eee;
+  background: #eeeeee;
 }
 
 #page {
+  background: white;
   max-width: 880px;
   margin: 0 auto;
 }
 
 #masthead {
-  background: white;
-  padding: 60px 20px 10px 40px;
+  border-bottom: 18px solid #eeeeee;
+  padding: 60px 40px 10px 40px;
 }
 
 #content {
-  background: white;
   padding: 20px 40px;
 }
 
 #colophon {
+  background: #eeeeee;
   padding: 20px 20px 80px 20px;
 }
 
@@ -388,32 +398,50 @@ body {
   display: inline;
   float: left;
   margin: 0 20px 0 0;
+  max-width: 20%;
 }
-
-.site-branding {
+#masthead .site-branding {
   float: left;
+  width: 40%;
+}
+#masthead .main-navigation {
+  float: right;
+  margin: 4em 0 1em 0;
+  width: 40%;
 }
 
 /*--------------------------------------------------------------
-5.4 Secondary
+5.4 Sidebar
 --------------------------------------------------------------*/
 #secondary {
   background: #006060;
   color: #dddddd;
+  float: left;
+  font-size: 13px;
+  font-size: 1.3rem;
+  height: 100%;
   margin: 0 0 0 -300px;
   padding: 20px;
   width: 300px;
-  float: left;
-  height: 100%;
   z-index: 9999;
-  top: 0;
+  overflow: scroll;
+  overflow-x: hidden;
   position: fixed;
+  top: 0;
+}
+#secondary h3 {
+  text-transform: uppercase;
 }
 #secondary a {
   color: white;
 }
 #secondary a:hover {
   color: white;
+}
+#secondary ul {
+  list-style: none;
+  margin: 4px 0;
+  padding: 0;
 }
 
 /*--------------------------------------------------------------
@@ -581,11 +609,7 @@ a:hover, a:focus, a:active {
 7.2 Menus
 --------------------------------------------------------------*/
 .main-navigation {
-  clear: both;
   display: block;
-  float: left;
-  margin: 3em 0 1em 0;
-  width: 100%;
 }
 
 .main-navigation ul {
@@ -680,7 +704,7 @@ a.open {
   -webkit-border-radius: 0px;
   border-radius: 0px 0px 8px 0;
   padding: 14px 28px 18px 14px;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 }
@@ -690,7 +714,13 @@ a.open {
 
 a.close {
   margin: 14px 0x 18px 14px;
-  padding: 18px;
+  padding: 0 0 18px 0;
+  width: 100%;
+  text-align: right;
+  float: right;
+}
+.admin-bar a.close {
+  margin-top: 28px;
 }
 
 a.sidebar-toggle {
@@ -824,7 +854,18 @@ a.sidebar-toggle .dashicons {
 12.1 Posts and pages
 --------------------------------------------------------------*/
 .hentry {
-  margin: 0 0 1.5em;
+  margin: 0 0 4em;
+  	/*.entry-content {
+  		float: letter-spacing: ;
+  		width: 70%;
+  	}
+  
+  	.entry-meta,
+  	.entry-footer {
+  		float: right;
+  		padding-right: 5%;
+  		width: 25%;
+  	}*/
 }
 
 .byline,

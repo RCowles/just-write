@@ -7,7 +7,7 @@
 ?>
 	<div id="secondary" class="widget-area" role="complementary">
 
-		<a class="sidebar-toggle close alignright"><div class="dashicons dashicons-dismiss"></div></a>
+		<a class="sidebar-toggle close"><div class="dashicons dashicons-dismiss"></div></a>
 
 		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 

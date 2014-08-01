@@ -2,62 +2,26 @@
 5.2 Layout
 --------------------------------------------------------------*/
 body {
-	background: #eee;
+	background: $color__page-back;
 }
 
 #page {
+	background: $color__content-back;
 	max-width: 880px;
 	margin: 0 auto;
 }
 
 #masthead {
-	background: $color__content-back;
-	padding: 60px 20px 10px 40px;
+	//background: #222;
+	border-bottom: 18px solid $color__page-back;
+	padding: 60px 40px 10px 40px;
 }
 
 #content {
-	background: $color__content-back;
 	padding: 20px 40px;
 }
 
 #colophon {
+	background: $color__page-back;
 	padding: 20px 20px 80px 20px;
-}
-
-/*--------------------------------------------------------------
-5.3 Header
---------------------------------------------------------------*/
-#masthead img.avatar {
-	border-radius: 50px;
-	display: inline;
-	float: left;
-	margin: 0 20px 0 0;
-}
-
-.site-branding {
-	float: left;
-}
-
-/*--------------------------------------------------------------
-5.4 Secondary
---------------------------------------------------------------*/
-#secondary {
-	background: $color__secondary-background;
-	color: $color__secondary-text;
-	margin: 0 0 0 -300px;
-	padding: 20px;
-	width: 300px;
-	float: left;
-	height: 100%;
-	z-index: 9999;
-	top: 0;
-	position: fixed;
-
-	a {
-		color: $color__link-secondary;
-	}
-
-	a:hover {
-		color: $color__link-secondary--hover;
-	}
 }

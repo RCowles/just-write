@@ -4,22 +4,26 @@
 /*--------------------------------------------------------------
 2.1 Fonts
 --------------------------------------------------------------*/
-$serif: Georgia, serif;
+//@import url(http://fonts.googleapis.com/css?family=Bitter);
+//$serif: 'Bitter', serif;
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+$serif: 'Roboto Slab', serif;
 $sans-serif: Verdana, sans-serif;
 
 /*--------------------------------------------------------------
 2.2 Colors
 --------------------------------------------------------------*/
+$color__primary: #009393;
 $color__primary-text: #7C7C7C;
 $color__secondary-text: #ddd;
-//$color__secondary-background: #222;
 $color__secondary-background: darken(#009393, 10%);
 $color__content-back: #fff;
+$color__page-back: #eee;
 
 /*--------------------------------------------------------------
 2.3 Links
 --------------------------------------------------------------*/
-$color__link: #009393;
+$color__link: $color__primary;
 $color__link--visited: darken($color__link, 2%);
 $color__link--hover: darken($color__link, 10%);
 $color__link-secondary: #fff;

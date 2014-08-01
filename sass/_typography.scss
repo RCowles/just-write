@@ -14,7 +14,12 @@ textarea {
 }
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
-	font-family: $sans-serif;
+	font-family: $serif;
+}
+h3 {
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 1.5;
 }
 p {
 	margin-bottom: 1.5em;

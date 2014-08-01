@@ -35,11 +35,11 @@ a {
 7.2 Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	clear: both;
+	//clear: both;
 	display: block;
-	float: left;
-	margin: 3em 0 1em 0;
-	width: 100%;
+	//float: left;
+	//margin: 3em 0 1em 0;
+	//width: 100%;
 }
 .main-navigation ul {
 	list-style: none;
@@ -132,7 +132,7 @@ a.sidebar-toggle {
 a.open {
 	@include border-radius(0px 0px 8px 0);
 	padding: 14px 28px 18px 14px;
-	position: absolute;
+	position: fixed;
 		top: 0;
 		left: 0;
 
@@ -143,7 +143,14 @@ a.open {
 
 a.close {
 	margin: 14px 0x 18px 14px;
-	padding: 18px;
+	padding: 0 0 18px 0;
+	width: 100%;
+	text-align: right;
+	float: right;
+
+	.admin-bar & {
+		margin-top: 28px;
+	}
 }
 
 a.sidebar-toggle {

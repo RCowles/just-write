@@ -473,12 +473,13 @@ body {
 #masthead .main-navigation {
   float: right;
   margin: 4em 0 1em 0;
-  width: 40%;
+  max-width: 40%;
 }
 @media (max-width: 640px) {
   #masthead .main-navigation {
     margin: 1em 0;
     text-align: center;
+    max-width: 100%;
     width: 100%;
   }
 }

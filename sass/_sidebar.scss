@@ -12,13 +12,12 @@
 	padding: 20px;
 	width: 300px;
 	z-index: 9999;
-	overflow: scroll;
-	overflow-x: hidden;
+	overflow: auto;
 	position: fixed;
 		top: 0;
 
 	h3 {
-		text-transform: uppercase;
+
 	}
 
 	a {

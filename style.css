@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: Just Write
 Theme URI: http://justwrite.ryanscowles.com/
@@ -27,10 +28,11 @@ Just Write is based on Underscores http://underscores.me/, (C) 2012-2014 Automat
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 1.0 - Compass
-2.0 - Variables
+2.0 - Variables and Mixins
 	2.1 - Fonts
 	2.2 - Colors
 	2.3 - Links
+	2.4 - Mixins
 3.0 - Reset
 4.0 - Typography
 	4.1 - Header
@@ -76,6 +78,9 @@ Just Write is based on Underscores http://underscores.me/, (C) 2012-2014 Automat
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 2.3 Links
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+2.4 Mixins
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 3.0 - Reset
@@ -207,6 +212,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Slab", serif;
 }
 
+h3, h4, h5 {
+  text-transform: uppercase;
+}
+
 h3 {
   font-size: 14px;
   font-size: 1.4rem;
@@ -215,6 +224,7 @@ h3 {
 
 p {
   margin-bottom: 1.5em;
+  line-height: 1.6;
 }
 
 b, strong {
@@ -302,6 +312,36 @@ big {
 .entry-footer,
 .site-footer {
   font-size: 12px;
+}
+
+/* 4.3 Blockquotes
+*/
+.entry-content blockquote {
+  font-family: serif;
+  font-size: 125%;
+  text-align: center;
+  font-style: italic;
+  /*&:before,
+  &:after {
+  	background: $color__secondary-text;
+  	content: "";
+  	display: block;
+  	height: 2px;
+  	margin: 10px auto;
+  	text-align: center;
+  	width: 100px;
+  }*/
+}
+.entry-content blockquote cite {
+  display: block;
+  font-family: Verdana, sans-serif;
+  font-size: 70%;
+  font-style: normal;
+  line-height: 2;
+  text-transform: uppercase;
+}
+.entry-content blockquote cite:before {
+  content: "— ";
 }
 
 /*--------------------------------------------------------------
@@ -393,21 +433,60 @@ body {
 /*--------------------------------------------------------------
 5.3 Header
 --------------------------------------------------------------*/
-#masthead img.avatar {
+#masthead .avatar {
   border-radius: 50px;
   display: inline;
   float: left;
   margin: 0 20px 0 0;
   max-width: 20%;
 }
+@media (max-width: 640px) {
+  #masthead .avatar {
+    margin: 0 5% 0 0;
+    width: 20%;
+  }
+}
+@media (max-width: 480px) {
+  #masthead .avatar {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+}
 #masthead .site-branding {
   float: left;
   width: 40%;
+}
+@media (max-width: 640px) {
+  #masthead .site-branding {
+    width: 75%;
+  }
+}
+@media (max-width: 480px) {
+  #masthead .site-branding {
+    text-align: center;
+    width: 100%;
+  }
 }
 #masthead .main-navigation {
   float: right;
   margin: 4em 0 1em 0;
   width: 40%;
+}
+@media (max-width: 640px) {
+  #masthead .main-navigation {
+    margin: 1em 0;
+    text-align: center;
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  #masthead .main-navigation {
+    text-align: center;
+    width: 100%;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -424,13 +503,9 @@ body {
   padding: 20px;
   width: 300px;
   z-index: 9999;
-  overflow: scroll;
-  overflow-x: hidden;
+  overflow: auto;
   position: fixed;
   top: 0;
-}
-#secondary h3 {
-  text-transform: uppercase;
 }
 #secondary a {
   color: white;
@@ -662,6 +737,7 @@ a:hover, a:focus, a:active {
   .menu-toggle,
   .main-navigation.toggled .nav-menu {
     display: block;
+    margin: 0 auto;
   }
 
   .main-navigation ul {
@@ -855,17 +931,6 @@ a.sidebar-toggle .dashicons {
 --------------------------------------------------------------*/
 .hentry {
   margin: 0 0 4em;
-  	/*.entry-content {
-  		float: letter-spacing: ;
-  		width: 70%;
-  	}
-  
-  	.entry-meta,
-  	.entry-footer {
-  		float: right;
-  		padding-right: 5%;
-  		width: 25%;
-  	}*/
 }
 
 .byline,
@@ -902,6 +967,41 @@ a.sidebar-toggle .dashicons {
 --------------------------------------------------------------*/
 .comment-content a {
   word-wrap: break-word;
+}
+
+ol.comment-list {
+  list-style: none;
+  margin: 20px 0;
+}
+ol.comment-list li {
+  margin: 1em 0;
+}
+ol.comment-list li .comment-meta {
+  float: left;
+  padding: 1%;
+  text-align: center;
+  width: 37%;
+}
+ol.comment-list li .comment-meta .comment-author {
+  background: #eeeeee;
+  padding: 2%;
+}
+ol.comment-list li .comment-meta .comment-author .avatar {
+  border-radius: 50px;
+  margin: 0 8px 8px 0;
+  vertical-align: middle;
+  width: 80px;
+}
+ol.comment-list li .comment-meta time {
+  font-size: 12px;
+}
+ol.comment-list li .comment-content {
+  float: left;
+  padding: 1% 0 1% 2%;
+  width: 60%;
+}
+ol.comment-list li .reply {
+  clear: both;
 }
 
 /*--------------------------------------------------------------

@@ -3,22 +3,55 @@
 --------------------------------------------------------------*/
 #masthead {
 
-	img.avatar {
+	.avatar {
 		border-radius: 50px;
 		display: inline;
 		float: left;
 		margin: 0 20px 0 0;
 		max-width: 20%;
+
+		@include bp(medium) {
+			margin: 0 5% 0 0;
+			width: 20%;
+		}
+
+		@include bp(small) {
+			display: block;
+			float: none;
+			margin: 0 auto;
+			text-align: center;
+			width: 100%;
+		}
 	}
 
 	.site-branding {
 		float: left;
 		width: 40%;
+
+		@include bp(medium) {
+			width: 75%;
+		}
+
+		@include bp(small) {
+			text-align: center;
+			width: 100%;
+		}
 	}
 
 	.main-navigation {
 		float: right;
 		margin: 4em 0 1em 0;
-		width: 40%
+		width: 40%;
+
+		@include bp(medium) {
+			margin: 1em 0;
+			text-align: center;
+			width: 100%;
+		}
+
+		@include bp(small) {
+			text-align: center;
+			width: 100%;
+		}
 	}
 }

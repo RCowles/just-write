@@ -434,7 +434,7 @@ body {
 5.3 Header
 --------------------------------------------------------------*/
 #masthead .avatar {
-  border-radius: 50px;
+  border-radius: 100px;
   display: inline;
   float: left;
   margin: 0 20px 0 0;
@@ -443,7 +443,7 @@ body {
 @media (max-width: 640px) {
   #masthead .avatar {
     margin: 0 5% 0 0;
-    width: 20%;
+    max-width: 20%;
   }
 }
 @media (max-width: 480px) {

@@ -1,0 +1,62 @@
+/*--------------------------------------------------------------
+12.3 Comments
+--------------------------------------------------------------*/
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+}
+
+ol.comment-list {
+	list-style: none;
+	margin: 20px 0;
+
+	li {
+		margin: 1em 0;
+
+		.comment-body {
+
+		}
+
+		.comment-meta {
+			float: left;
+			padding: 1%;
+			text-align: center;
+			width: 37%;
+
+			.comment-author {
+				background: $color__page-back;
+				padding: 2%;
+
+				.avatar {
+					border-radius: 50px;
+					//clear: both;
+					//display: block;
+					margin: 0 8px 8px 0;
+					//float: left;
+					vertical-align: middle;
+					width: 80px;
+				}
+
+				.fn {
+
+				}
+			}
+
+			time {
+				font-size: 12px;
+			}
+		}
+
+		.comment-content {
+			//border-left: 2px solid #999;
+			float: left;
+			padding: 1% 0 1% 2%;
+			width: 60%;
+		}
+
+		.reply {
+			clear: both;
+		}
+	}
+}

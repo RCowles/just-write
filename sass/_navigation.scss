@@ -35,27 +35,29 @@ a {
 7.2 Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	//clear: both;
 	display: block;
-	//float: left;
-	//margin: 3em 0 1em 0;
-	//width: 100%;
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+	}
+
+
+	li {
+		float: left;
+		position: relative;
+	}
+
+
+	a {
+		display: block;
+		margin: 0 .5em 0 0;
+		padding: 6px;
+		text-decoration: none;
+	}
 }
-.main-navigation ul {
-	list-style: none;
-	margin: 0;
-	padding-left: 0;
-}
-.main-navigation li {
-	float: left;
-	position: relative;
-}
-.main-navigation a {
-	display: block;
-	margin: 0 .5em 0 0;
-	padding: 6px;
-	text-decoration: none;
-}
+
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	display: none;
@@ -101,18 +103,24 @@ a {
 		display: none;
 	}
 }
-.site-main .comment-navigation,
-.site-main .paging-navigation,
-.site-main .post-navigation {
-	margin: 0 0 1.5em;
-	overflow: hidden;
+.site-main {
+	.comment-navigation,
+	.site-main .paging-navigation,
+	.site-main .post-navigation {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
 }
-.comment-navigation .nav-previous,
-.paging-navigation .nav-previous,
-.post-navigation .nav-previous {
-	float: left;
-	width: 50%;
+
+.nav-previous {
+ 	.comment-navigation &,
+	.paging-navigation &,
+	.post-navigation & {
+		float: left;
+		width: 50%;
+	}
 }
+
 .comment-navigation .nav-next,
 .paging-navigation .nav-next,
 .post-navigation .nav-next {

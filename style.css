@@ -687,18 +687,15 @@ a:hover, a:focus, a:active {
 .main-navigation {
   display: block;
 }
-
 .main-navigation ul {
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
-
 .main-navigation li {
   float: left;
   position: relative;
 }
-
 .main-navigation a {
   display: block;
   margin: 0 .5em 0 0;
@@ -746,15 +743,13 @@ a:hover, a:focus, a:active {
   }
 }
 .site-main .comment-navigation,
-.site-main .paging-navigation,
-.site-main .post-navigation {
+.site-main .site-main .paging-navigation,
+.site-main .site-main .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
 
-.comment-navigation .nav-previous,
-.paging-navigation .nav-previous,
-.post-navigation .nav-previous {
+.comment-navigation .nav-previous, .paging-navigation .nav-previous, .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }

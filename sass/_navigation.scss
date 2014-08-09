@@ -43,19 +43,22 @@ a {
 		padding-left: 0;
 
 		ul {
+			background: $color__page-back;
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			display: none;
 			float: left;
 			left: 0;
 			position: absolute;
-			top: 1.5em;
+			top: 2em;
 			z-index: 99999;
 
 			a {
+				display: block;
+				padding: .5em;
 				width: 200px;
 
 				&:hover {
-
+					color: darken($color__primary, 10%);
 				}
 			}
 
@@ -68,9 +71,10 @@ a {
 				top: 0;
 			}
 
-			li:hover > ul {
-				display: block;
-			}
+		}
+
+		li:hover > ul {
+			display: block;
 		}
 	}
 

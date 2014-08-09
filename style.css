@@ -693,22 +693,28 @@ a:hover, a:focus, a:active {
   padding-left: 0;
 }
 .main-navigation ul ul {
+  background: #eeeeee;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   display: none;
   float: left;
   left: 0;
   position: absolute;
-  top: 1.5em;
+  top: 2em;
   z-index: 99999;
 }
 .main-navigation ul ul a {
+  display: block;
+  padding: .5em;
   width: 200px;
+}
+.main-navigation ul ul a:hover {
+  color: #006060;
 }
 .main-navigation ul ul ul {
   left: 100%;
   top: 0;
 }
-.main-navigation ul ul li:hover > ul {
+.main-navigation ul li:hover > ul {
   display: block;
 }
 .main-navigation li {

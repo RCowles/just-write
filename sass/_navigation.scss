@@ -142,8 +142,17 @@ a {
 --------------------------------------------------------------*/
 a.sidebar-toggle {
 	background: $color__secondary-background;
+	color: $color__content-back;
 	cursor: pointer;
 	font: normal 28px/1 'dashicons';
+
+	&:hover {
+		color: darken($color__content-back, 10%);
+	}
+
+	.dashicons {
+		font: normal 32px/1 'dashicons';
+	}
 }
 
 a.open {
@@ -168,16 +177,4 @@ a.close {
 	.admin-bar & {
 		margin-top: 28px;
 	}
-}
-
-a.sidebar-toggle {
-	color: $color__content-back;
-}
-
-a.sidebar-toggle:hover {
-	color: darken($color__content-back, 10%);
-}
-
-a.sidebar-toggle .dashicons {
-	font: normal 32px/1 'dashicons';
 }

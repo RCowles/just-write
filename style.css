@@ -763,8 +763,15 @@ a:hover, a:focus, a:active {
 --------------------------------------------------------------*/
 a.sidebar-toggle {
   background: #006060;
+  color: white;
   cursor: pointer;
   font: normal 28px/1 'dashicons';
+}
+a.sidebar-toggle:hover {
+  color: #e6e6e6;
+}
+a.sidebar-toggle .dashicons {
+  font: normal 32px/1 'dashicons';
 }
 
 a.open {
@@ -789,18 +796,6 @@ a.close {
 }
 .admin-bar a.close {
   margin-top: 28px;
-}
-
-a.sidebar-toggle {
-  color: white;
-}
-
-a.sidebar-toggle:hover {
-  color: #e6e6e6;
-}
-
-a.sidebar-toggle .dashicons {
-  font: normal 32px/1 'dashicons';
 }
 
 /*--------------------------------------------------------------

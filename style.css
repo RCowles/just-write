@@ -692,17 +692,6 @@ a:hover, a:focus, a:active {
   margin: 0;
   padding-left: 0;
 }
-.main-navigation li {
-  float: left;
-  position: relative;
-}
-.main-navigation a {
-  display: block;
-  margin: 0 .5em 0 0;
-  padding: 6px;
-  text-decoration: none;
-}
-
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   display: none;
@@ -712,18 +701,25 @@ a:hover, a:focus, a:active {
   top: 1.5em;
   z-index: 99999;
 }
-
+.main-navigation ul ul a {
+  width: 200px;
+}
 .main-navigation ul ul ul {
   left: 100%;
   top: 0;
 }
-
-.main-navigation ul ul a {
-  width: 200px;
-}
-
-.main-navigation ul li:hover > ul {
+.main-navigation ul ul li:hover > ul {
   display: block;
+}
+.main-navigation li {
+  float: left;
+  position: relative;
+}
+.main-navigation a {
+  display: block;
+  margin: 0 .5em 0 0;
+  padding: 6px;
+  text-decoration: none;
 }
 
 /* Small menu */

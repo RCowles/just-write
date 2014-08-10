@@ -212,14 +212,23 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Slab", serif;
 }
 
-h3, h4, h5 {
-  text-transform: uppercase;
+h1 {
+  font-size: 48px;
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 32px;
+  font-size: 3.2rem;
 }
 
 h3 {
-  font-size: 14px;
-  font-size: 1.4rem;
-  line-height: 1.5;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+h3, h4, h5 {
+  text-transform: uppercase;
 }
 
 p {
@@ -294,15 +303,16 @@ big {
   font-size: 125%;
 }
 
+q {
+  font-style: italic;
+}
+
 /*--------------------------------------------------------------
 4.1 Header
 --------------------------------------------------------------*/
-.site-title {
-  font-size: 300%;
-}
-
-.entry-title {
-  font-size: 200%;
+.site-description {
+  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 /*--------------------------------------------------------------
@@ -314,9 +324,11 @@ big {
   font-size: 12px;
 }
 
-/* 4.3 Blockquotes
-*/
+/*--------------------------------------------------------------
+4.3 Blockquotes
+--------------------------------------------------------------*/
 .entry-content blockquote {
+  color: #969696;
   font-family: serif;
   font-size: 125%;
   text-align: center;
@@ -401,6 +413,14 @@ table {
 
 th {
   font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background: #eeeeee;
+}
+
+td {
+  padding: 4px;
 }
 
 /*--------------------------------------------------------------
@@ -966,32 +986,38 @@ ol.comment-list {
   list-style: none;
   margin: 20px 0;
 }
+ol.comment-list ol {
+  list-style: none;
+}
 ol.comment-list li {
   margin: 1em 0;
 }
+ol.comment-list li .comment-body {
+  border-bottom: 2px dashed #dddddd;
+  padding: 1em 0 2em 0;
+}
 ol.comment-list li .comment-meta {
-  float: left;
-  padding: 1%;
   text-align: center;
-  width: 37%;
 }
 ol.comment-list li .comment-meta .comment-author {
-  background: #eeeeee;
-  padding: 2%;
+  float: left;
 }
 ol.comment-list li .comment-meta .comment-author .avatar {
   border-radius: 50px;
   margin: 0 8px 8px 0;
   vertical-align: middle;
-  width: 80px;
+  width: 70px;
+}
+ol.comment-list li .comment-meta .comment-author .comment-metadata {
+  float: right;
 }
 ol.comment-list li .comment-meta time {
+  display: block;
   font-size: 12px;
+  text-align: right;
 }
 ol.comment-list li .comment-content {
-  float: left;
-  padding: 1% 0 1% 2%;
-  width: 60%;
+  clear: both;
 }
 ol.comment-list li .reply {
   clear: both;
@@ -1041,6 +1067,9 @@ object {
 14.1 Captions
 --------------------------------------------------------------*/
 .wp-caption {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-style: italic;
   margin-bottom: 1.5em;
   max-width: 100%;
 }

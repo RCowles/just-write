@@ -17,14 +17,23 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $serif;
 }
 
-h3, h4, h5 {
-	text-transform: uppercase;
+h1 {
+	font-size: 48px;
+	font-size: 4.8rem;
+}
+
+h2 {
+	font-size: 32px;
+	font-size: 3.2rem;
 }
 
 h3 {
-	font-size: 14px;
-	font-size: 1.4rem;
-	line-height: 1.5;
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+
+h3, h4, h5 {
+	text-transform: uppercase;
 }
 p {
 	margin-bottom: 1.5em;
@@ -84,15 +93,23 @@ small {
 big {
 	font-size: 125%;
 }
+q {
+	font-style: italic;
+}
 
 /*--------------------------------------------------------------
 4.1 Header
 --------------------------------------------------------------*/
 .site-title {
-	font-size: 300%;
+	//font-size: 300%;
 }
 .entry-title {
-	font-size: 200%;
+	//font-size: 200%;
+}
+
+.site-description {
+	font-size: 16px;
+	font-size: 1.6rem;
 }
 
 /*--------------------------------------------------------------
@@ -104,10 +121,12 @@ big {
 	font-size: 12px;
 }
 
-/* 4.3 Blockquotes
-*/
+/*--------------------------------------------------------------
+4.3 Blockquotes
+--------------------------------------------------------------*/
 .entry-content {
 	blockquote {
+		color: lighten($color__primary-text, 10%);
 		font-family: serif;
 		font-size: 125%;
 		text-align: center;

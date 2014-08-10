@@ -30,7 +30,11 @@
 
 	ul {
 		list-style: none;
-		margin: 4px 0;
+		margin: 8px 0 24px 0;
 		padding: 0;
+
+		li {
+			margin: 4px 0;
+		}
 	}
 }

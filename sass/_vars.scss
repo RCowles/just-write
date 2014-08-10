@@ -6,8 +6,6 @@ $content-width: 880px;
 /*--------------------------------------------------------------
 2.1 Fonts
 --------------------------------------------------------------*/
-//@import url(http://fonts.googleapis.com/css?family=Bitter);
-//$serif: 'Bitter', serif;
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
 $serif: 'Roboto Slab', serif;
 $sans-serif: Verdana, sans-serif;
@@ -44,4 +42,13 @@ $color__link-secondary--hover: lighten($color__link-secondary, 10%);
 	@else if $point == small {
 		@media (max-width: 480px)  { @content; }
 	}
+}
+
+/* Dashicons */
+@mixin dashicon($icon, $size) {
+	content: $icon;
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	font: normal $size/1 'dashicons';
+	vertical-align: top;
 }

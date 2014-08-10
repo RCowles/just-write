@@ -101,10 +101,19 @@ q {
 4.1 Header
 --------------------------------------------------------------*/
 .site-title {
-	//font-size: 300%;
+
 }
 .entry-title {
-	//font-size: 200%;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+
+	.sticky & {
+		&:after {
+			@include dashicon("\f109", 46px);
+			color: $color__primary;
+			float: right;
+		}
+	}
 }
 
 .site-description {
@@ -131,17 +140,6 @@ q {
 		font-size: 125%;
 		text-align: center;
 		font-style: italic;
-
-		/*&:before,
-		&:after {
-			background: $color__secondary-text;
-			content: "";
-			display: block;
-			height: 2px;
-			margin: 10px auto;
-			text-align: center;
-			width: 100px;
-		}*/
 
 		cite {
 			display: block;

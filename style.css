@@ -82,6 +82,7 @@ Just Write is based on Underscores http://underscores.me/, (C) 2012-2014 Automat
 /*--------------------------------------------------------------
 2.4 Mixins
 --------------------------------------------------------------*/
+/* Dashicons */
 /*--------------------------------------------------------------
 3.0 - Reset
 --------------------------------------------------------------*/
@@ -310,6 +311,20 @@ q {
 /*--------------------------------------------------------------
 4.1 Header
 --------------------------------------------------------------*/
+.entry-title {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+.sticky .entry-title:after {
+  content: "\f109";
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font: normal 46px "dashicons";
+  vertical-align: top;
+  color: #009393;
+  float: right;
+}
+
 .site-description {
   font-size: 16px;
   font-size: 1.6rem;
@@ -333,16 +348,6 @@ q {
   font-size: 125%;
   text-align: center;
   font-style: italic;
-  /*&:before,
-  &:after {
-  	background: $color__secondary-text;
-  	content: "";
-  	display: block;
-  	height: 2px;
-  	margin: 10px auto;
-  	text-align: center;
-  	width: 100px;
-  }*/
 }
 .entry-content blockquote cite {
   display: block;
@@ -477,15 +482,17 @@ body {
 }
 #masthead .site-branding {
   float: left;
-  width: 40%;
+  max-width: 40%;
 }
 @media (max-width: 640px) {
   #masthead .site-branding {
-    width: 75%;
+    max-width: 75%;
   }
 }
 @media (max-width: 480px) {
   #masthead .site-branding {
+    float: none;
+    margin: 0 auto;
     text-align: center;
     width: 100%;
   }
@@ -536,8 +543,11 @@ body {
 }
 #secondary ul {
   list-style: none;
-  margin: 4px 0;
+  margin: 8px 0 24px 0;
   padding: 0;
+}
+#secondary ul li {
+  margin: 4px 0;
 }
 
 /*--------------------------------------------------------------
@@ -771,6 +781,10 @@ a:hover, a:focus, a:active {
   overflow: hidden;
 }
 
+.post-navigation {
+  overflow: hidden;
+}
+
 .comment-navigation .nav-previous, .paging-navigation .nav-previous, .post-navigation .nav-previous {
   float: left;
   width: 50%;
@@ -967,6 +981,33 @@ a.close {
   margin: 0 0 1.5em;
 }
 
+.posted-on time:before {
+  content: "\f145";
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font: normal 16px "dashicons";
+  vertical-align: top;
+  padding-right: 4px;
+}
+
+.byline .author a:before {
+  content: "\f110";
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font: normal 16px "dashicons";
+  vertical-align: top;
+  padding-right: 4px;
+}
+
+.entry-footer:before {
+  content: "\f323";
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font: normal 16px "dashicons";
+  vertical-align: top;
+  padding-right: 4px;
+}
+
 /*--------------------------------------------------------------
 12.2 Asides
 --------------------------------------------------------------*/
@@ -978,6 +1019,15 @@ a.close {
 /*--------------------------------------------------------------
 12.3 Comments
 --------------------------------------------------------------*/
+.comments-title {
+  display: block;
+  margin: 48px 0 24px 0;
+}
+
+#respond {
+  margin: 24px 0 12px 0;
+}
+
 .comment-content a {
   word-wrap: break-word;
 }
@@ -986,7 +1036,7 @@ ol.comment-list {
   list-style: none;
   margin: 20px 0;
 }
-ol.comment-list ol {
+ol.comment-list ol.children {
   list-style: none;
 }
 ol.comment-list li {
@@ -1016,11 +1066,26 @@ ol.comment-list li .comment-meta time {
   font-size: 12px;
   text-align: right;
 }
+ol.comment-list li .comment-meta time:before {
+  content: "\f469";
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font: normal 16px "dashicons";
+  vertical-align: top;
+}
 ol.comment-list li .comment-content {
   clear: both;
 }
 ol.comment-list li .reply {
   clear: both;
+}
+ol.comment-list li .reply .comment-reply-link:before {
+  content: "\f101";
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font: normal 16px "dashicons";
+  vertical-align: top;
+  padding: 4px 2px;
 }
 
 /*--------------------------------------------------------------

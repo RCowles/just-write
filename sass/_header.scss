@@ -26,13 +26,15 @@
 
 	.site-branding {
 		float: left;
-		width: 40%;
+		max-width: 40%;
 
 		@include bp(medium) {
-			width: 75%;
+			max-width: 75%;
 		}
 
 		@include bp(small) {
+			float: none;
+			margin: 0 auto;
 			text-align: center;
 			width: 100%;
 		}

@@ -27,6 +27,21 @@
 	margin: 0 0 1.5em;
 }
 
+.posted-on time:before {
+	@include dashicon("\f145", 16px);
+	padding-right: 4px;
+}
+
+.byline .author a:before {
+	@include dashicon("\f110", 16px);
+	padding-right: 4px;
+}
+
+.entry-footer:before {
+	@include dashicon("\f323", 16px);
+	padding-right: 4px;
+}
+
 /*--------------------------------------------------------------
 12.2 Asides
 --------------------------------------------------------------*/

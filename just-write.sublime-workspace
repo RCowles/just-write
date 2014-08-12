@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"color__",
+				"color__primary-text"
+			],
+			[
 				"ent",
 				"entry-content"
 			],
@@ -16,10 +20,10 @@
 	"buffers":
 	[
 		{
-			"file": "style.css",
+			"file": "sass/_media.scss",
 			"settings":
 			{
-				"buffer_size": 15710,
+				"buffer_size": 1676,
 				"line_ending": "Unix"
 			}
 		}
@@ -72,6 +76,23 @@
 	},
 	"file_history":
 	[
+		"/Users/ryancowles/Downloads/jeherve-long-shortlink/jeherve-long-shortlink.php",
+		"/Users/ryancowles/Documents/Websites/www.justwrite.dev/wp-content/themes/just-write/sass/_typography.scss",
+		"/Users/ryancowles/Documents/Websites/www.justwrite.dev/wp-content/themes/just-write/sass/_header.scss",
+		"/Users/ryancowles/Documents/Websites/www.justwrite.dev/wp-content/themes/just-write/README.md",
+		"/Users/ryancowles/Documents/Websites/www.justwrite.dev/wp-content/themes/just-write/page.php",
+		"/Users/ryancowles/Documents/Websites/www.justwrite.dev/wp-content/themes/just-write/header.php",
+		"/Users/ryancowles/Documents/Websites/www.justwrite.dev/wp-content/themes/just-write/sass/style.scss",
+		"/Users/ryancowles/Documents/Websites/www.justwrite.dev/wp-content/themes/just-write/style.css",
+		"/Users/ryancowles/Documents/Websites/www.justwrite.dev/wp-content/themes/just-write/sass/_comments.scss",
+		"/Users/ryancowles/Documents/Websites/www.justwrite.dev/wp-content/themes/just-write/comments.php",
+		"/Users/ryancowles/Documents/Websites/www.justwrite.dev/wp-content/themes/just-write/sass/_vars.scss",
+		"/Users/ryancowles/Documents/Websites/www.justwrite.dev/wp-content/themes/just-write/sass/_content.scss",
+		"/Users/ryancowles/Documents/Websites/www.justwrite.dev/wp-content/themes/just-write/sass/_navigation.scss",
+		"/Users/ryancowles/Documents/Websites/www.justwrite.dev/wp-content/themes/just-write/sass/_elements.scss",
+		"/Users/ryancowles/Documents/Websites/www.justwrite.dev/wp-content/themes/just-write/sass/_media.scss",
+		"/Users/ryancowles/Documents/Websites/www.justwrite.dev/wp-content/themes/just-write/sass/_sidebar.scss",
+		"/Users/ryancowles/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/scss/variables/_colors.scss",
 		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/header.php",
 		"/Users/Ryan/Documents/Websites/www.themes.dev/wp-content/themes/exhibition/content.php",
@@ -155,7 +176,7 @@
 	],
 	"find":
 	{
-		"height": 25.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -178,6 +199,25 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"bypostauthor",
+			"avatar",
+			"avata",
+			"comments",
+			"avatar",
+			"commen",
+			"avatar",
+			"comment",
+			"reply-title",
+			"pos4t-na",
+			"color__primary",
+			"posted on",
+			"meta",
+			"quote",
+			"a.sidebar-toggle",
+			"if",
+			"else",
+			"while",
+			"child",
 			"900px",
 			"1200px",
 			"900px",
@@ -286,25 +326,7 @@
 			"meta_s2",
 			"mytheme",
 			"hent",
-			"default",
-			"input[type=\"submit\"]:hover",
-			"input[type=\"submit\"]:hover\n",
-			"input[type=\"submit\"]:hover",
-			".comment {",
-			"comment-me",
-			".entry",
-			"mast",
-			"6f9d9f",
-			"gener",
-			".entry-meta",
-			".site-main",
-			";\n",
-			".hentry",
-			"#main",
-			"article",
-			"site-main",
-			"featured-content",
-			"featured-conte"
+			"default"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -340,19 +362,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "style.css",
-					"semi_transient": true,
+					"file": "sass/_media.scss",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 15710,
+						"buffer_size": 1676,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1576,
+								1576
 							]
 						],
 						"settings":
@@ -360,26 +382,6 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
@@ -392,20 +394,47 @@
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close"
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close"
 							],
-							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": -0.0,
-						"translation.y": 0.0,
+						"translation.x": 0.0,
+						"translation.y": 516.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -446,6 +475,10 @@
 	},
 	"menu_visible": true,
 	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
 	{
 		"height": 0.0
 	},

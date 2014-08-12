@@ -1032,6 +1032,11 @@ a.close {
   word-wrap: break-word;
 }
 
+.bypostauthor {
+  border-left: 4px solid #009393;
+  padding-left: 16px;
+}
+
 ol.comment-list {
   list-style: none;
   margin: 20px 0;
@@ -1196,4 +1201,12 @@ object {
 
 .gallery-columns-9 .gallery-item {
   max-width: 11.11%;
+}
+
+.gallery-caption {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-style: italic;
+  margin-bottom: 1.5em;
+  max-width: 100%;
 }

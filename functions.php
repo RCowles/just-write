@@ -54,6 +54,9 @@ function just_write_setup() {
 		'default-image' => '',
 	) ) );
 
+	// Add Editor Style.
+	add_editor_style( 'editor-style.css' );
+
 	// Enable support for HTML5 markup.
 	add_theme_support( 'html5', array(
 		'comment-list',

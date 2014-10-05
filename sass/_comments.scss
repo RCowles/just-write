@@ -63,7 +63,7 @@ ol.comment-list {
 				text-align: right;
 
 				&:before {
-					@include dashicon("\f469", 16px);
+					@include dashicon(f469, 16px);
 				}
 			}
 		}
@@ -77,7 +77,7 @@ ol.comment-list {
 
 			.comment-reply-link {
 				&:before {
-					@include dashicon("\f101", 16px);
+					@include dashicon(f101, 16px);
 					padding: 4px 2px;
 				}
 			}

@@ -28,17 +28,17 @@
 }
 
 .posted-on time:before {
-	@include dashicon("\f145", 16px);
+	@include dashicon(f145, 16px);
 	padding-right: 4px;
 }
 
 .byline .author a:before {
-	@include dashicon("\f110", 16px);
+	@include dashicon(f110, 16px);
 	padding-right: 4px;
 }
 
 .entry-footer:before {
-	@include dashicon("\f323", 16px);
+	@include dashicon(f323, 16px);
 	padding-right: 4px;
 }
 

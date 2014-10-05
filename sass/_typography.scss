@@ -125,7 +125,7 @@ q {
 
 	.sticky & {
 		&:after {
-			@include dashicon("\f109", 46px);
+			@include dashicon(f109, 46px);
 			color: $color__primary;
 			float: right;
 		}

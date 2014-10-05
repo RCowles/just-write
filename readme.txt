@@ -46,8 +46,9 @@ just-write-sidebar.js, Copyright 2014 Ryan Cowles
  - License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Changelog ==
-= 0.1.1 - September 23, 2014 =
+= 0.1.1 - Octover 5, 2014 =
 * Issues fixed for theme review (https://themes.trac.wordpress.org/ticket/20197#comment:2)
+* Google fonts enqueued properly
 
 = 0.1 - August 12, 2014 =
 * Initial release.

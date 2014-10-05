@@ -6,7 +6,7 @@ $content-width: 880px;
 /*--------------------------------------------------------------
 2.1 Fonts
 --------------------------------------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+//@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
 $serif: 'Roboto Slab', serif;
 $sans-serif: Verdana, sans-serif;
 
@@ -45,8 +45,15 @@ $color__link-secondary--hover: lighten($color__link-secondary, 10%);
 }
 
 /* Dashicons */
+/*--------------------------------------------------------------
+The char-from-code function is a workaround for
+https://github.com/sass/sass/issues/659
+--------------------------------------------------------------*/
+@function char-from-code($char) {
+  @return unquote('\"\\#{$char}\"');
+}
 @mixin dashicon($icon, $size) {
-	content: $icon;
+	content: char-from-code($icon);
 	display: inline-block;
 	-webkit-font-smoothing: antialiased;
 	font: normal $size/1 'dashicons';

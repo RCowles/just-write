@@ -70,6 +70,40 @@ endif; // just_write_setup
 add_action( 'after_setup_theme', 'just_write_setup' );
 
 /**
+ * Sets up Google font URLs for proper enqueing
+ *
+ * Note that this function is hooked into the after_setup_theme hook, which
+ * runs before the init hook. The init hook is too late for some features, such
+ * as indicating support for post thumbnails.
+ */
+function just_write_fonts_url() {
+    $fonts_url = '';
+
+    /* Translators: If there are characters in your language that are not
+    * supported by Lora, translate this to 'off'. Do not translate
+    * into your own language.
+    */
+    $roboto_slab = _x( 'on', 'Roboto Slab font: on or off', 'just-write' );
+
+    if ( 'off' !== $roboto_slab ) {
+        $font_families = array();
+
+        if ( 'off' !== $roboto_slab ) {
+            $font_families[] = 'Roboto Slab';
+        }
+
+        $query_args = array(
+            'family' => urlencode( implode( '|', $font_families ) ),
+            'subset' => urlencode( 'latin,latin-ext' ),
+        );
+
+        $fonts_url = add_query_arg( $query_args, '//fonts.googleapis.com/css' );
+    }
+
+    return $fonts_url;
+}
+
+/**
  * Register widget area.
  *
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
@@ -94,6 +128,8 @@ function just_write_scripts() {
 	wp_enqueue_style( 'just-write-style', get_stylesheet_uri() );
 
 	wp_enqueue_style( 'dashicons' );
+
+	wp_enqueue_style( 'just-write-fonts', just_write_fonts_url(), array(), null );
 
 	wp_enqueue_script( 'just-write-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 

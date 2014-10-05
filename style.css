@@ -72,7 +72,6 @@ Just Write is based on Underscores http://underscores.me/, (C) 2012-2014 Automat
 /*--------------------------------------------------------------
 2.1 Fonts
 --------------------------------------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
 /*--------------------------------------------------------------
 2.2 Colors
 --------------------------------------------------------------*/
@@ -83,6 +82,10 @@ Just Write is based on Underscores http://underscores.me/, (C) 2012-2014 Automat
 2.4 Mixins
 --------------------------------------------------------------*/
 /* Dashicons */
+/*--------------------------------------------------------------
+The char-from-code function is a workaround for
+https://github.com/sass/sass/issues/659
+--------------------------------------------------------------*/
 /*--------------------------------------------------------------
 3.0 - Reset
 --------------------------------------------------------------*/
@@ -316,7 +319,7 @@ q {
   word-wrap: break-word;
 }
 .sticky .entry-title:after {
-  content: "";
+  content: "\f109";
   display: inline-block;
   -webkit-font-smoothing: antialiased;
   font: normal 46px "dashicons";
@@ -982,7 +985,7 @@ a.close {
 }
 
 .posted-on time:before {
-  content: "";
+  content: "\f145";
   display: inline-block;
   -webkit-font-smoothing: antialiased;
   font: normal 16px "dashicons";
@@ -991,7 +994,7 @@ a.close {
 }
 
 .byline .author a:before {
-  content: "";
+  content: "\f110";
   display: inline-block;
   -webkit-font-smoothing: antialiased;
   font: normal 16px "dashicons";
@@ -1000,7 +1003,7 @@ a.close {
 }
 
 .entry-footer:before {
-  content: "";
+  content: "\f323";
   display: inline-block;
   -webkit-font-smoothing: antialiased;
   font: normal 16px "dashicons";
@@ -1072,7 +1075,7 @@ ol.comment-list li .comment-meta time {
   text-align: right;
 }
 ol.comment-list li .comment-meta time:before {
-  content: "";
+  content: "\f469";
   display: inline-block;
   -webkit-font-smoothing: antialiased;
   font: normal 16px "dashicons";
@@ -1085,7 +1088,7 @@ ol.comment-list li .reply {
   clear: both;
 }
 ol.comment-list li .reply .comment-reply-link:before {
-  content: "";
+  content: "\f101";
   display: inline-block;
   -webkit-font-smoothing: antialiased;
   font: normal 16px "dashicons";

@@ -3,12 +3,12 @@
 --------------------------------------------------------------*/
 #masthead {
 
-	.avatar {
-		border-radius: 100px;
+	.site-logo {
+		border-radius: 200px;
 		display: inline;
 		float: left;
 		margin: 0 20px 0 0;
-		max-width: 20%;
+		max-width: 100px;
 
 		@include bp(medium) {
 			margin: 0 5% 0 0;

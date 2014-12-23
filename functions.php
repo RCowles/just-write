@@ -65,6 +65,8 @@ function just_write_setup() {
 		'gallery',
 		'caption',
 	) );
+
+	add_image_size( 'just-write-site-logo', '200', '200' );
 }
 endif; // just_write_setup
 add_action( 'after_setup_theme', 'just_write_setup' );

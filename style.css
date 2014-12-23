@@ -5,7 +5,7 @@ Theme URI: http://justwrite.ryanscowles.com
 Author: Ryan Cowles
 Author URI: http://ryanscowles.com
 Description: Just Write is a simple theme, geared towards writers and bloggers who want the focus of their site to be on their written content. It includes a primary menu, and a sidebar that can be toggled.
-Version: 0.1.1
+Version: 0.1.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: just-write
@@ -402,18 +402,18 @@ body {
 /*--------------------------------------------------------------
 5.3 Header
 --------------------------------------------------------------*/
-#masthead .avatar {
-  border-radius: 100px;
+#masthead .site-logo {
+  border-radius: 200px;
   display: inline;
   float: left;
   margin: 0 20px 0 0;
-  max-width: 20%; }
+  max-width: 100px; }
   @media (max-width: 640px) {
-    #masthead .avatar {
+    #masthead .site-logo {
       margin: 0 5% 0 0;
       max-width: 20%; } }
   @media (max-width: 480px) {
-    #masthead .avatar {
+    #masthead .site-logo {
       display: block;
       float: none;
       margin: 0 auto;

@@ -1,7 +1,7 @@
 === Just Write ===
 Contributors: ryancowles
 Tags: green, gray, white, light, one-column, left-sidebar, responsive-layout, custom-background, custom-menu, editor-style, sticky-post, theme-options, threaded-comments, clean, minimal
-Tested up to: 4.0
+Tested up to: 4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,7 +46,11 @@ just-write-sidebar.js, Copyright 2014 Ryan Cowles
  - License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Changelog ==
-= 0.1.1 - Octover 5, 2014 =
+= 0.1.2 - December 22, 2014 =
+* Add support for Jetpack's Site Logo
+* Minor CSS error fixed (https://themes.trac.wordpress.org/ticket/21093#comment:10)
+
+= 0.1.1 - October 5, 2014 =
 * Issues fixed for theme review (https://themes.trac.wordpress.org/ticket/20197#comment:2)
 * Google fonts enqueued properly
 

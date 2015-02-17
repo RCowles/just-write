@@ -46,6 +46,10 @@ just-write-sidebar.js, Copyright 2014 Ryan Cowles
  - License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Changelog ==
+
+= 0.1.2 - February 16, 2015=
+* Center align cite tags (https://themes.trac.wordpress.org/ticket/21093#comment:28)
+
 = 0.1.2 - December 22, 2014 =
 * Add support for Jetpack's Site Logo
 * Minor CSS error fixed (https://themes.trac.wordpress.org/ticket/21093#comment:10)

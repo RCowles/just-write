@@ -33,4 +33,10 @@
 			}
 		} );
 	} );
+	// Sidebar background color.
+	wp.customize( 'just_write_sidebar_color', function( value ) {
+		value.bind( function( to ) {
+			$( 'a.sidebar-toggle, #secondary' ).css( 'background-color', to );
+		} );
+	} );
 } )( jQuery );

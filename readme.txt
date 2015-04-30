@@ -13,6 +13,7 @@ Just Write is geared towards writers and bloggers who want the focus of their si
 * Responsive layout.
 * Slide-out sidebar.
 * Minimalist design.
+* Custom colors.
 
 == Installation ==
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
@@ -47,7 +48,11 @@ just-write-sidebar.js, Copyright 2014 Ryan Cowles
 
 == Changelog ==
 
-= 0.1.2 - February 16, 2015=
+= 0.1.4 - April 29th, 2015=
+* Add color options to Theme Customizer
+* Improve mobile menu styling
+
+= 0.1.3 - February 16, 2015=
 * Center align cite tags (https://themes.trac.wordpress.org/ticket/21093#comment:28)
 
 = 0.1.2 - December 22, 2014 =

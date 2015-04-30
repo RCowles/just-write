@@ -35,6 +35,26 @@ function just_write_customize_register( $wp_customize ) {
     )
 	);
 
+	$wp_customize->add_setting(
+		'just_write_link_color',
+		array(
+				'default'     => '#009393',
+				'transport'   => 'postMessage'
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+				$wp_customize,
+				'link_color',
+				array(
+						'label'      => __( 'Link Color', 'just_write' ),
+						'section'    => 'colors',
+						'settings'   => 'just_write_link_color'
+				)
+		)
+	);
+
 }
 add_action( 'customize_register', 'just_write_customize_register' );
 
@@ -53,6 +73,7 @@ function just_write_customizer_css() {
     ?>
     <style type="text/css">
 			a.sidebar-toggle, #secondary { background-color: <?php echo get_theme_mod( 'just_write_sidebar_color' ); ?>; }
+			#page a, #page a:active, #page a:visited { color: <?php echo get_theme_mod( 'just_write_link_color' ); ?>; }
     </style>
     <?php
 }

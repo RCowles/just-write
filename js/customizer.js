@@ -36,13 +36,13 @@
 	// Sidebar background color.
 	wp.customize( 'just_write_sidebar_color', function( value ) {
 		value.bind( function( to ) {
-			$( 'a.sidebar-toggle, #secondary' ).css( 'background-color', to );
+			$( 'a.sidebar-toggle.open, #secondary' ).css( 'background-color', to );
 		} );
 	} );
 	// Link color.
 	wp.customize( 'just_write_link_color', function( value ) {
 		value.bind( function( to ) {
-			$( '#page a, #page a:visited, #page a:active' ).css( 'color', to );
+			$( '#page a, #page a:visited, #page a:active, .sticky .entry-title:after' ).css( 'color', to );
 		} );
 	} );
 } )( jQuery );

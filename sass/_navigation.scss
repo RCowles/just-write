@@ -149,10 +149,13 @@ a {
 7.3 Sidebar toggle
 --------------------------------------------------------------*/
 a.sidebar-toggle {
-	background: $color__secondary-background;
 	color: $color__content-back;
 	cursor: pointer;
 	font: normal 28px/1 'dashicons';
+
+	&.open {
+		background: $color__secondary-background;
+	}
 
 	&:hover {
 		color: darken($color__content-back, 10%);

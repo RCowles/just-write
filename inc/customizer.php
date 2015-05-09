@@ -74,8 +74,10 @@ add_action( 'customize_preview_init', 'just_write_customize_preview_js' );
 function just_write_customizer_css() {
     ?>
     <style type="text/css">
-			a.sidebar-toggle, #secondary { background-color: <?php echo get_theme_mod( 'just_write_sidebar_color' ); ?>; }
-			#page a, #page a:active, #page a:visited { color: <?php echo get_theme_mod( 'just_write_link_color' ); ?>; }
+			a.sidebar-toggle.open, #secondary { background-color: <?php echo get_theme_mod( 'just_write_sidebar_color' ); ?>; }
+			#page a, #page a:active, #page a:visited, .sticky .entry-title:after { color: <?php echo get_theme_mod( 'just_write_link_color' ); ?>; }
+			.entry-content a { border-bottom: 1px solid <?php echo get_theme_mod( 'just_write_link_color' ); ?>; }
+			.bypostauthor { border-left: 4px solid <?php echo get_theme_mod( 'just_write_link_color' ); ?>; }
     </style>
     <?php
 }

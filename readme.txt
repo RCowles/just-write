@@ -1,7 +1,7 @@
 === Just Write ===
 Contributors: ryancowles
 Tags: green, gray, white, light, one-column, left-sidebar, responsive-layout, custom-background, custom-colors, custom-menu, editor-style, sticky-post, theme-options, threaded-comments, clean, minimal
-Tested up to: 4.2
+Tested up to: 4.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -47,6 +47,10 @@ just-write-sidebar.js, Copyright 2014 Ryan Cowles
  - License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Changelog ==
+
+= 1.1 - May 9th, 2015=
+* Custom colors: Add sanitize callback
+* Custom colors: Remove customizer flickering
 
 = 0.1.4 - April 29th, 2015=
 * Add color options to Theme Customizer

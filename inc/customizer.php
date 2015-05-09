@@ -19,6 +19,7 @@ function just_write_customize_register( $wp_customize ) {
     'just_write_sidebar_color',
     array(
         'default'     => '#009393',
+				'sanitize_callback' => 'sanitize_hex_color',
 				'transport'   => 'postMessage'
     )
 	);
@@ -39,6 +40,7 @@ function just_write_customize_register( $wp_customize ) {
 		'just_write_link_color',
 		array(
 				'default'     => '#009393',
+				'sanitize_callback' => 'sanitize_hex_color',
 				'transport'   => 'postMessage'
 		)
 	);
